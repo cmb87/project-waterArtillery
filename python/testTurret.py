@@ -29,7 +29,7 @@ def on_connect(client, userdata, flags, rc):
 # Define callback function for when a message is received
 def on_message(client, userdata, message):
    # print("Message received on topic:", message.topic)
-   # print("Message:", message.payload.decode())
+    print("Message:", message.payload.decode())
     pass
 
 
@@ -72,12 +72,12 @@ relay = 0
 try:
     while True:
         # Get user input for x, y, and relay values
-       # x = int(input("Enter value for x (0-180): "))
-       # y = int(input("Enter value for y (0-180): "))
+        x = int(input("Enter value for x (0-180): "))
+        y = int(input("Enter value for y (0-180): "))
         #relay = int(input("Enter value for relay (0 or 1): "))
 
-        x = 0
-        y = 0
+#        x = 0
+ #       y = 0
 
         if relay == 1:
             relay = 0

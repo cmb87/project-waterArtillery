@@ -2,8 +2,8 @@
 #include <Servo.h>
 
 #define MAX_SIGNAL 2000
-#define MIN_SIGNAL 1000
-#define MOTOR_PIN D6
+#define MIN_SIGNAL 0
+#define MOTOR_PIN D7
 int DELAY = 1000;
 
 Servo motor;
